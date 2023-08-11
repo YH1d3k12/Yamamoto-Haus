@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamamoto Haus</title>
+</head>
+<body class="bg-payne-gray">
+	<header>
+		<nav class="flex items-center w-full h-[15vh] 2xl:h-[20vh] p-5 bg-[url('/public/images/background_granulado.png')] bg-cover bg-no-repeat bg-center bg-fixed">
+			<img class="w-[140px] 2xl:w-[160px] h-auto p-[10px] ml-[3%] 2xl:ml-[5%]" src="{{ URL('/images/logo_capim.png') }}" alt="logo branca">
+
+			<div class="flex flex-col ml-[2%] items-center text-green leading-8">
+				<h1 class="text-[1.5rem] 2xl:text-[2.2rem] mt-[20px] font-libra font-light uppercase tracking-[4px]">
+					Yamamoto Haus
+				</h1>
+
+				<h3 class="text-[1rem] 2xl:text-[1.4rem] font-montserrat font-thin lowercase tracking-[6.5px] 2xl:tracking-[8.5px]">
+					Desing de interiores
+				</h3>
+			</div>
+
+			<div id="mobileMenu" class="xl:hidden mr-[5%] ml-auto border-[3px] border-green p-[5px] rounded-[10px] transition-all duration-300 ease-in-out cursor-pointer">
+				<span class="block xl:hidden w-[35px] h-[3px] my-[7px] mx-auto bg-green"></span>
+				<span class="block xl:hidden w-[35px] h-[3px] my-[7px] mx-auto bg-green"></span>
+				<span class="block xl:hidden w-[35px] h-[3px] my-[7px] mx-auto bg-green"></span>
+			</div>
+
+			<!-- <ul class="xl:flex items-center text-center xl:ml-auto xl:mr-[5%] text-[1.2rem] 2xl:text-[1.5rem] text-green font-libra"> -->
+			<ul class="
+				xl:flex xl:grid-cols-none xl:static xl:top-auto xl:z-0 xl:ml-auto xl:mr-[5%] xl:h-auto xl:w-auto 2xl:text-[1.5rem]
+				items-center text-center text-green font-libra
+				grid grid-cols-[auto] absolute top-[-1000px] z-[-1] h-[50vh] w-full text-[1.3rem] transition-all duration-500 ease-in-out
+			">
+				<li class="mx-[5px] xl:mx-[20px]">
+					<button class="hover:bg-brown hover:text-vista-white rounded-[25px] py-[12px] px-[24px] lowercase tracking-[1.5px]">
+						Nossa essência
+					</button>
+				</li>
+
+				<li class="mx-[5px] xl:mx-[20px]">
+					<button class="hover:bg-brown hover:text-vista-white rounded-[25px] py-[12px] px-[24px] lowercase tracking-[1.5px]">
+						Serviços
+					</button>
+				</li>
+
+				<li class="mx-[5px] xl:mx-[20px]">
+					<button class="hover:bg-brown hover:text-vista-white rounded-[25px] py-[12px] px-[24px] lowercase tracking-[1.5px]">
+						Projetos
+					</button>
+				</li>
+
+				<li class="mx-[5px] xl:mx-[20px]">
+					<button class="hover:bg-brown hover:text-vista-white rounded-[25px] py-[12px] px-[24px] lowercase tracking-[1.5px]">
+						Social
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<script src="{{asset('resources/js/app.js')}}"></script>
+
+</body>
+</html>
