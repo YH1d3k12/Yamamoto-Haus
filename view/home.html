@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yamamoto Haus</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yamamoto Haus</title>
+
+    <link rel="stylesheet" href="/css/homeStyle.css">
 </head>
-<body class="bg-payne-gray">
-	<header>
-		<nav class="flex items-center w-full h-[15vh] 2xl:h-[20vh] p-5 ">
-			<img class="w-[140px] 2xl:w-[160px] h-auto p-[10px] ml-[3%] 2xl:ml-[5%]" src="{{ URL('/images/logo_capim.png') }}" alt="logo branca">
 
-			<div class="flex flex-col ml-[2%] items-center text-green leading-8">
-				<h1 class="text-[1.5rem] 2xl:text-[2.2rem] mt-[20px] font-libra font-light uppercase tracking-[4px]">
-					Yamamoto Haus
-				</h1>
+<body id="veil">
 
-				<h3 class="text-[1rem] 2xl:text-[1.4rem] font-montserrat font-thin lowercase tracking-[6.5px] 2xl:tracking-[8.5px]">
-					Desing de interiores
-				</h3>
-			</div>
+	<header class="navigation-background-image" id="veil">
+		<nav class="navigation-wrapper">
+			
+			<span class="brand-container">
+				<img class="brand-logo" src="/images/logo_capim.png" alt="logo capim">
 
-			<div id="mobileMenu" class="xl:hidden mr-[5%] ml-auto border-[3px] border-green p-[5px] rounded-[10px] transition-all duration-300 ease-in-out cursor-pointer">
-				<span class="block xl:hidden w-[35px] h-[3px] my-[7px] mx-auto bg-green"></span>
-				<span class="block xl:hidden w-[35px] h-[3px] my-[7px] mx-auto bg-green"></span>
-				<span class="block xl:hidden w-[35px] h-[3px] my-[7px] mx-auto bg-green"></span>
-			</div>
-
-			<!-- <ul class="xl:flex items-center text-center xl:ml-auto xl:mr-[5%] text-[1.2rem] 2xl:text-[1.5rem] text-green font-libra"> -->
-			<ul class="
-				xl:flex xl:grid-cols-none xl:static xl:top-auto xl:z-0 xl:ml-auto xl:mr-[5%] xl:h-auto xl:w-auto 2xl:text-[1.5rem]
-				items-center text-center text-green font-libra
-				grid grid-cols-[auto] absolute top-[-1000px] z-[-1] h-[50vh] w-full text-[1.3rem] transition-all duration-500 ease-in-out
-			">
-				<li class="mx-[5px] xl:mx-[20px]">
-					<button class="hover:bg-brown hover:text-vista-white rounded-[25px] py-[12px] px-[24px] lowercase tracking-[1.5px]">
-						Nossa essência
-					</button>
+				<div class="brand-name-wrapper">
+					<h1 class="brand-title">Yamamoto Haus</h1>
+					<h3 class="brand-subtitle">Desing de interiores</h3>
+				</div>
+			</span>
+			
+			<ul class="navbar-menu">
+				<li class="navbar-menu-item">
+					<a class="navbar-menu-link">Nossa essência</a>
 				</li>
-
-				<li class="mx-[5px] xl:mx-[20px]">
-					<button class="hover:bg-brown hover:text-vista-white rounded-[25px] py-[12px] px-[24px] lowercase tracking-[1.5px]">
-						Serviços
-					</button>
+				
+				<li class="navbar-menu-item">
+					<a class="navbar-menu-link">Serviços</a>
 				</li>
-
-				<li class="mx-[5px] xl:mx-[20px]">
-					<button class="hover:bg-brown hover:text-vista-white rounded-[25px] py-[12px] px-[24px] lowercase tracking-[1.5px]">
-						Projetos
-					</button>
+				
+				<li class="navbar-menu-item">
+					<a class="navbar-menu-link">Projetos</a>
 				</li>
-
-				<li class="mx-[5px] xl:mx-[20px]">
-					<button class="hover:bg-brown hover:text-vista-white rounded-[25px] py-[12px] px-[24px] lowercase tracking-[1.5px]">
-						Social
-					</button>
+				
+				<li class="navbar-menu-item">
+					<a class="navbar-menu-link">Social</a>
 				</li>
 			</ul>
+			
+			<div id="mobile-navbar">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+
 		</nav>
 	</header>
 
-	<script src="{{asset('resources/js/app.js')}}"></script>
-
+	<script src="/js/app.js"></script>
 </body>
 </html>
