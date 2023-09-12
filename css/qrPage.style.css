@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Libra-Serif-Modern';
-    src: url(/fonts/libra-serif-modern.regular.otf) format('opentype');
+    src: url(/fonts/LibraSerifModern-Regular.otf) format('opentype');
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-Light.ttf) format('truetype');
+    src: url(/fonts/Montserrat-Regular.ttf) format('truetype');
 }
 
 :root {
@@ -88,8 +88,8 @@
 .brand-subtitle {
     color: var(--qr-subtitle-color);
     font-family: 'Montserrat';
-    font-size: 0.95rem;
-    font-weight: 200;
+    font-size: 0.85rem;
+    font-weight: 100;
 
     letter-spacing: 0.4em;
     line-height: 6px;
@@ -206,11 +206,11 @@
     }
 
     .brand-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .brand-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 

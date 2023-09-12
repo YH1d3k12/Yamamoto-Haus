@@ -17,9 +17,7 @@
 
 .section-01-content-wrapper {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
 
     height: 100%;
     width: 100%;
@@ -37,7 +35,7 @@
     height: 100%;
     width: 100%;
 
-    z-index: -1;
+    z-index: 1;
 }
 
 /*----------------- Text ---------------------------*/
@@ -46,11 +44,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-
     height: 100%;
-    width: 100%;
+    width: 70%;
 
+    text-align: center;
     z-index: 2;
 }
 

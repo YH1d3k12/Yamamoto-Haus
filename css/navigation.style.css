@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Libra-Serif-Modern';
-    src: url(/fonts/libra-serif-modern.regular.otf) format('opentype');
+    src: url(/fonts/LibraSerifModern-Regular.otf) format('opentype');
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-Light.ttf) format('truetype');
+    src: url(/fonts/Montserrat-Regular.ttf) format('truetype');
 }
 
 :root {
@@ -25,6 +25,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+
+    z-index: 9999;
 }
 
 /* Content Wrapper */
@@ -64,17 +66,17 @@
     margin-top: 5px;
 
     font-family: 'Libra-Serif-Modern';
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 .brand-subtitle {
     font-family: 'Montserrat';
-    font-size: 0.7rem;
-    font-weight: 200;
-    letter-spacing: 5px;
+    font-size: 0.6rem;
+    font-weight: 100;
+    letter-spacing: 4px;
     text-transform: lowercase;
 }
 
@@ -172,11 +174,11 @@
     
     .brand-title {
         margin-top: 10px;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
     .brand-subtitle {
-        font-size: 1rem;
+        font-size: 0.75rem;
         letter-spacing: 6.5px;
     }
 }
@@ -198,12 +200,12 @@
     
     .brand-title {
         margin-top: 5px;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     .brand-subtitle {
-        font-size: 0.7rem;
-        letter-spacing: 5px;
+        font-size: 0.6rem;
+        letter-spacing: 4px;
     }
 
     .navbar-menu {
@@ -258,8 +260,8 @@
     }
     
     .brand-subtitle {
-        font-size: 1.2rem;
-        letter-spacing: 7.5px;
+        font-size: 0.9rem;
+        letter-spacing: 6.5px;
     }
 
     .navbar-menu-item {
@@ -293,8 +295,8 @@
     }
     
     .brand-subtitle {
-        font-size: 1.4rem;
-        letter-spacing: 8.5px;
+        font-size: 1.1rem;
+        letter-spacing: 7.5px;
     }
 
     .navbar-menu-link:hover {
