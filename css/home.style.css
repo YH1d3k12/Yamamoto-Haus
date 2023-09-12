@@ -25,13 +25,23 @@
 }
 
 body {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* body::-webkit-scrollbar {
+    width: 0.000001px;
+} */
+
+.section {
+    height: calc(100vh - 70px);
 }
 
 /* Background Image */
 .navigation-background-image {
+    position: sticky;
+    top: 0;
+
     background-image: url(/images/background_granulado.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -165,20 +175,6 @@ body {
 
 #mobile-navbar.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-}
-
-.content-wrapper {
-    width: 100vw;
-    overflow-y: scroll;
-}
-
-.content-wrapper::-webkit-scrollbar {
-    width: 0.000001px;
-} 
-
-.section {
-    height: 80vh;
-    width: 100%;
 }
 
 /* Responsive design for screens equal or larger than 640px */

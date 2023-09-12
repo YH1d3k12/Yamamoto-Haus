@@ -8,9 +8,7 @@ mobileMenu.addEventListener('click', function() {
 })
 
 links.forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault();
-
+    link.addEventListener('click', function() {
         mobileMenu.classList.remove('is-active');
         menu.classList.remove('active');
     });
