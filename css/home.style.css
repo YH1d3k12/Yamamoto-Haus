@@ -1,20 +1,3 @@
-@font-face {
-    font-family: 'Libra-Serif-Modern';
-    src: url(/fonts/libra-serif-modern.regular.otf) format('opentype');
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-Light.ttf) format('truetype');
-}
-
-:root {
-    --navigation-brand-name-color: #585c44;
-    --navigation-navbar-item-color: #585c44;
-    --navigation-navbar-item-hover-bg-color: #9f4f39;
-    --navigation-navbar-item-hover-color: #e6e1d7;
-    --mobile-menu-bar-color: #585c44;
-}
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -29,307 +12,39 @@ body {
     scroll-behavior: smooth;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 0.000001px;
-} */
+}
 
 .section {
     height: calc(100vh - 70px);
 }
 
-/* Background Image */
-.navigation-background-image {
-    position: sticky;
-    top: 0;
-
-    background-image: url(/images/background_granulado.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-/* Content Wrapper */
-.navigation-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    padding: 5px;
-}
-
-/* Brand Logo and Title */
-.brand-container {
-    display: flex;
-    align-items: center;
-}
-
-.brand-logo {
-    height: auto;
-    width: 60px;
-}
-
-.brand-name-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    height: 60px;
-    margin: 0px 10px;
-
-    color: var(--navigation-brand-name-color);
-    text-align: center;
-}
-
-.brand-title {
-    margin-top: 5px;
-
-    font-family: 'Libra-Serif-Modern';
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-
-.brand-subtitle {
-    font-family: 'Montserrat';
-    font-size: 0.7rem;
-    font-weight: 200;
-    letter-spacing: 5px;
-    text-transform: lowercase;
-}
-
-/* Navigation Items */
-.navbar-menu {
-    display: hidden;
-    grid-template-columns: auto;
-    position: absolute;
-    top: -1000px;
-
-    height: 50vh;
-    width: 80vw;
-    border-radius: 8px;
-
-    background-image: url(/images/background_granulado.png);
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
-
-.navbar-menu-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 12px;
-}
-
-.navbar-menu-link {
-    width: 90%;
-    padding: 12px;
-    border-radius: 25px;
-
-    color: var(--navigation-navbar-item-color);
-    font-family: 'Libra-Serif-Modern';
-    font-size: 1.2rem;
-    letter-spacing: 1.5px;
-
-    cursor: pointer;
-    text-transform: lowercase;
-    text-align: center;
-}
-
-.navbar-menu-link:hover {
-    background-color: var(--navigation-navbar-item-hover-bg-color);
-    color: var(--navigation-navbar-item-hover-color);
-}
-
-.navbar-menu.active {
-    display: grid;
-    top: 20%;
-    z-index: 99;
-    transition: all 0.5s ease;
-
-    -webkit-box-shadow: 0px 0px 0px 100vw rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 0px 100vw rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 0px 100vw rgba(0,0,0,0.3);
-}
-
-#mobile-navbar .bar {
-    display: block;
-
-    height: 3px;
-    width: 25px;
-    margin: 5px auto;
-
-    background-color: var(--mobile-menu-bar-color);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-#mobile-navbar.is-active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-#mobile-navbar.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-#mobile-navbar.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
 
 /* Responsive design for screens equal or larger than 640px */
 @media (min-width: 640px) {
-    .navigation-wrapper {
-        padding: 10px;
-    }
-    
-    .brand-logo {
-        width: 100px;
-    }
-    
-    .brand-name-wrapper {
-        height: 100px;
-        margin: 0px 20px;
-    }
-    
-    .brand-title {
-        margin-top: 10px;
-        font-size: 1.5rem;
-    }
-    
-    .brand-subtitle {
-        font-size: 1rem;
-        letter-spacing: 6.5px;
+    .section {
+        height: calc(100vh - 120px);
     }
 }
 
 /* Responsive design for screens equal or larger than 768px */
 @media (min-width: 768px) {
-    .navigation-wrapper {
-        padding: 5px;
-    }
-    
-    .brand-logo {
-        width: 80px;
-    }
-    
-    .brand-name-wrapper {
-        height: 80px;
-        margin: 0px 10px;
-    }
-    
-    .brand-title {
-        margin-top: 5px;
-        font-size: 1rem;
-    }
-    
-    .brand-subtitle {
-        font-size: 0.7rem;
-        letter-spacing: 5px;
-    }
-
-    .navbar-menu {
-        display: flex;
-        grid-template-columns: none;
-        position: static;
-        top: none;
-    
-        height: auto;
-        width: auto;
-        border-radius: none;
-    
-        background-image: none;
-        box-shadow: none;
-    }
-
-    .navbar-menu-item {
-        margin: 0px 6px;
-    }
-      
-    .navbar-menu-link {
-        width: auto;
-        padding: 12px;
-
-        font-size: 1rem;
-        letter-spacing: 1.5px;
-    }
-
-    #mobile-navbar {
-        display: none;
+    .section {
+        height: calc(100vh - 90px);
     }
 }
 
 /* Responsive design for screens equal or larger than 1024px */
 @media (min-width: 1024px) {
-    .navigation-wrapper {
-        padding: 15px;
-    }
-    
-    .brand-logo {
-        width: 120px;
-    }
-    
-    .brand-name-wrapper {
-        height: 120px;
-        margin: 0px 30px;
-    }
-    
-    .brand-title {
-        margin-top: 10px;
-        font-size: 1.85rem;
-    }
-    
-    .brand-subtitle {
-        font-size: 1.2rem;
-        letter-spacing: 7.5px;
-    }
-
-    .navbar-menu-item {
-        margin: 0px 8px;
-    }
-      
-    .navbar-menu-link {
-        padding: 12px;
-        font-size: 1.1rem;
+    .section {
+        height: calc(100vh - 150px);
     }
 }
 
 /* Responsive design for screens equal or larger than 1536px */
 @media (min-width: 1536px) {
-    .navigation-wrapper {
-        padding: 20px;
-    }
-    
-    .brand-logo {
-        width: 140px;
-    }
-    
-    .brand-name-wrapper {
-        height: 140px;
-        margin: 0px 40px;
-    }
-    
-    .brand-title {
-        margin-top: 15px;
-        font-size: 2.2rem;
-    }
-    
-    .brand-subtitle {
-        font-size: 1.4rem;
-        letter-spacing: 8.5px;
-    }
-
-    .navbar-menu-link:hover {
-        background-color: var(--navigation-navbar-item-hover-bg-color);
-        color: var(--navigation-navbar-item-hover-color);
-    }
-    
-    .navbar-menu-item {
-        margin: 0px 12px;
-    }
-      
-    .navbar-menu-link {
-        padding: 12px;
-        font-size: 1.3rem;
+    .section {
+        height: calc(100vh - 180px);
     }
 }
