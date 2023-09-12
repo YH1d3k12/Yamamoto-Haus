@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.content-01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80vh;
+    width: 100vw;
+    
+    text-align: center;
+}
+
+/*----------------- Vídeo ---------------------------*/
+.section-01-background-video {
+    position: absolute;
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+    background-color: aqua;
+    z-index: -1;
+}
+
+/*----------------- Texto ---------------------------*/
+.section-01-first-paragraph {
+    color: var(--section-01-first-paragraph);
+    font-family: 'Libra-Serif-Modern';
+    font-weight: lighter;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    margin: 20px;
+}
+
+.section-01-second-paragraph {
+    color: var(--section-01-second-paragraph);
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 1.25rem;
+    letter-spacing: 1.2px;
+    margin: 20px;
+}
+
+/*----------------- Botão  --------------------------*/
+
+.section-01-button {
+    color: var(--section-01-button-color);
+    background-color: var(--section-01-button-background-color);
+    cursor: pointer;
+    font-family: 'Libra-Serif-Modern';
+    font-weight: lighter;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    border-radius: 25px;
+    border: none;
+    padding: 12px 24px;
+    margin: 15px;
+}

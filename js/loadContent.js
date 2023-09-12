@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() 
 {
     console.log("content loaded")
-    loadContent();
+    for (let i = 1; i <= 2; i++)
+    {
+        loadContent(i);
+    }
 });
 
-function loadContent() 
+function loadContent(i) 
 {
+    const contentWrapper = document.getElementById('contentWrapper');
     // Creates an instance of the XMLHttpRequest object, which is used to send HTTP requests.
     const xhr = new XMLHttpRequest();
     
@@ -13,7 +17,7 @@ function loadContent()
     // The third argument "true" specifies that the request should be asynchronous.
     try 
     {
-        xhr.open('GET', `../views/section.html`, true);
+        xhr.open('GET', `../views/section.${i}.html`, true);
 
         // This is an event handler that listens for changes in the state of the request. 
         // When the state becomes 4 (request is complete) and the status is 200 (success)
@@ -29,13 +33,8 @@ function loadContent()
                 const responseDoc = parser.parseFromString(xhr.responseText, 'text/html');
 
                 // Reads the content within content-wrapper
-                const responseContent = responseDoc.querySelector('.content-wrapper');
+                const responseContent = responseDoc.querySelector('.section');
                                         
-                // If there is a child within contentSection the following code will delete it
-                // After that, the new content will be loaded
-                if (contentWrapper.firstChild) {
-                    contentWrapper.removeChild(contentWrapper.firstChild);
-                }
                 contentWrapper.appendChild(responseContent);                
             }
         };

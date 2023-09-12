@@ -25,9 +25,8 @@
 }
 
 body {
-    background-color: slategrey;
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr;
     overflow: hidden;
 }
 
@@ -169,7 +168,17 @@ body {
 }
 
 .content-wrapper {
-    overflow: scroll;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.content-wrapper::-webkit-scrollbar {
+    width: 0.000001px;
+} 
+
+.content {
+    height: 80vh;
+    width: 100%;
 }
 
 /* Responsive design for screens equal or larger than 640px */
