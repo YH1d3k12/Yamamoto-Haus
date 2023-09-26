@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0.000001px;
+}
+
+.section {
+    height: calc(100vh - 70px);
+}
+
+
+/* Responsive design for screens equal or larger than 640px */
+@media (min-width: 640px) {
+    .section {
+        height: calc(100vh - 120px);
+    }
+}
+
+/* Responsive design for screens equal or larger than 768px */
+@media (min-width: 768px) {
+    .section {
+        height: calc(100vh - 90px);
+    }
+}
+
+/* Responsive design for screens equal or larger than 1024px */
+@media (min-width: 1024px) {
+    .section {
+        height: calc(100vh - 150px);
+    }
+}
+
+/* Responsive design for screens equal or larger than 1536px */
+@media (min-width: 1536px) {
+    .section {
+        height: calc(100vh - 180px);
+    }
+}

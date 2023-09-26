@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Libra-Serif-Modern';
+    src: url(/fonts/LibraSerifModern-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+:root {
+    --qr-title-color: #e6e1d7;
+    --qr-subtitle-color: #e6e1d7;
+
+    --qr-first-button-color: #585c44;
+    --qr-first-button-background-color: #ffffff;
+
+    --qr-second-button-color: #ffffff;
+    --qr-second-button-background-color: #ae172e;
+
+    --qr-third-button-color: #585c44;
+    --qr-third-button-background-color: #FFD171;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.background-image {
+    display: grid;
+    justify-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url(/images/background_bambu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+    row-gap: 16px;
+}
+
+/* Logo and Title */
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    text-align: center;
+}
+/* Logo */
+.brand-logo {
+    height: auto;
+    width: 224px;
+
+    margin: 20px 0px;
+}
+/* Title */
+.brand-title {
+    padding: 10px;
+    border-top: solid 2px var(--qr-title-color);
+
+    color: var(--qr-title-color);
+    font-family: 'Libra-Serif-Modern';
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+/* Subtitle */
+.brand-subtitle {
+    color: var(--qr-subtitle-color);
+    font-family: 'Montserrat';
+    font-size: 0.85rem;
+    font-weight: 100;
+
+    letter-spacing: 0.4em;
+    line-height: 6px;
+    text-transform: lowercase;
+}
+
+/* Media Links */
+.media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    column-gap: 16px;
+}
+/* Pinterest */
+.pinterest-logo {
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+
+    background-image: url(/images/pinterest_logo.png);
+    background-size: cover;
+
+    -webkit-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.1);
+}
+/* Linkedin */
+.linkedin-logo {
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+
+    background-image: url(/images/linkedin_logo.png);
+    background-size: cover;
+
+    -webkit-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.1);
+}
+
+/* Navigation Buttons */
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    row-gap: 24px;
+
+    text-align: center;
+}
+/* Button Background */
+.navigation-button {
+    width: 320px;
+    padding: 15px;
+    border-radius: 100px;
+
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+/* Button Link */
+.navigation-link {
+    font-family: 'Libra-Serif-Modern';
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+}
+
+/* First Button */
+.first-button {
+    background-color: var(--qr-first-button-background-color);
+}
+.first-button a {
+    color: var(--qr-first-button-color);
+}
+
+/* Second Button */
+.second-button {
+    background-color: var(--qr-second-button-background-color);
+}
+.second-button a {
+    color: var(--qr-second-button-color);
+}
+
+/* Third Button */
+.third-button {
+    background-color: var(--qr-third-button-background-color);
+}
+.third-button a {
+    color: var(--qr-third-button-color);
+}
+
+/* Responsive design for screens equal or larger than 640px */
+@media (min-width: 640px) {
+    .media-container {
+        padding: 16px 0px;
+    }
+
+    .navigation-button {
+        width: 420px;
+    }
+
+    .navigation-link {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive design for screens equal or larger than 1280px */
+@media (min-width: 1280px) {
+    .brand-logo {
+        width: 280px;
+    }
+
+    .brand-title {
+        font-size: 1.9rem;
+    }
+
+    .brand-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive design for screens equal or larger than 1536px */
+@media (min-width: 1536px) {
+    .background-image {
+        background-size: 100% 100%;
+    }
+}
