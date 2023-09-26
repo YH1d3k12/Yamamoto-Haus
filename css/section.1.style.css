@@ -1,4 +1,5 @@
-:root {
+:root 
+{
     --section-01-content-wrapper-background-color:#D1C9B9;
     --section-01-first-paragraph: #62684d;
     --section-01-second-paragraph: #62684d;
@@ -6,7 +7,8 @@
     --section-01-button-background-color: #4e6982;
 }
 
-.section-01-content-wrapper {
+.section-01-content-wrapper 
+{
     display: flex;
     justify-content: center;
 
@@ -17,7 +19,8 @@
 }
 
 /*----------------- Video ---------------------------*/
-.section-01-background-video {
+.section-01-background-video 
+{
     position: absolute;
     object-fit: cover;
     top: 0;
@@ -30,50 +33,142 @@
 }
 
 /*----------------- Text ---------------------------*/
-.section-01-container {
+.section-01-container 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 70%;
+    width: 100%;
 
     text-align: center;
     z-index: 2;
 }
 
-.section-01-first-paragraph {
-    margin: 20px;
+.section-01-first-paragraph 
+{
+    margin: 10px;
 
     color: var(--section-01-first-paragraph);
     font-family: 'Libra-Serif-Modern';
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 200;
     letter-spacing: 1.5px;
 }
 
-.section-01-second-paragraph {
-    margin: 20px;
+.section-01-second-paragraph 
+{
+    margin: 10px;
 
     color: var(--section-01-second-paragraph);
     font-family: 'Montserrat';
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 1.2px;
 }
 
 /*----------------- Button  --------------------------*/
 
-.section-01-button {
-    padding: 12px 24px;
+.section-01-button 
+{
+    padding: 6px 12px;
     border-radius: 25px;
-    margin: 15px;
+    margin: 10px;
 
     color: var(--section-01-button-color);
     background-color: var(--section-01-button-background-color);
     cursor: pointer;
     font-family: 'Libra-Serif-Modern';
-    font-weight: lighter;
-    font-size: 1.6rem;
+    font-weight: 200;
+    font-size: 1.2rem;
     letter-spacing: 1.5px;
+}
+
+@media (min-width: 640px) 
+{
+    .section-01-container 
+    {
+        width: 70%;
+    }
+    .section-01-first-paragraph 
+    {
+        margin: 15px;
+        font-size: 1.3rem;
+    }
+    
+    .section-01-second-paragraph 
+    {
+        margin: 15px;
+        font-size: 1.05rem;
+    }
+
+    .section-01-button 
+    {
+        padding: 8px 16px;
+        margin: 15px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsive design for screens equal or larger than 768px */
+@media (min-width: 768px) 
+{
+    .section-01-first-paragraph 
+    {
+        font-size: 1.4rem;
+    }
+    
+    .section-01-second-paragraph 
+    {
+        font-size: 1.1rem;
+    }
+
+    .section-01-button 
+    {
+        padding: 10px 20px;
+        font-size: 1.4rem;
+    }
+}
+
+/* Responsive design for screens equal or larger than 1024px */
+@media (min-width: 1024px) 
+{
+    .section-01-first-paragraph 
+    {
+        margin: 20px;
+        font-size: 1.6rem;
+    }
+    
+    .section-01-second-paragraph 
+    {
+        margin: 20px;
+        font-size: 1.25rem;
+    }
+
+    .section-01-button 
+    {
+        margin: 15px;
+        padding: 12px 24px;
+        font-size: 1.6rem;
+    }
+}
+
+/* Responsive design for screens equal or larger than 1536px */
+@media (min-width: 1536px) 
+{
+    .section-01-first-paragraph 
+    {
+        font-size: 1.8rem;
+    }
+    
+    .section-01-second-paragraph 
+    {
+        font-size: 1.3rem;
+    }
+
+    .section-01-button 
+    {
+        font-size: 1.8rem;
+    }
 }
