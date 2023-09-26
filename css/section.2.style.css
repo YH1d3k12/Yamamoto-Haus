@@ -1,19 +1,16 @@
-:root {
+:root 
+{
     --section-02-title-color: #62684d;
     --section-02-character-name-color: #62684d;
     --section-02-text-title-color: #62684d;
     --section-02-text-color: #62684d;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-
-.content-02 {
+.section-02-content-wrapper 
+{
+    display: flex;
+    flex-direction: column;
+    
     height: 100%;
     width: 100%;
 
@@ -24,104 +21,128 @@
     background-attachment: fixed;
 }
 
-/* 
-.section-02 {
-    display: grid;
-    grid-template-columns: 45vw 55vw;
-    grid-template-rows: 30vh 50vh;
+.section-02-title-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    background-image: url("/images/Fundo_branco_com_granulado.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    height: 40%;
+    width: 100%;
 }
 
-.section-02 h2 {
-    grid-column: span 2;
-    grid-row: 1;
-
-    margin: 150px 0px 50px 0px;
-
+.section-02-title-container h2
+{
     font-family: 'Libra-Serif-Modern';
-    font-weight: lighter;
-    font-size: 25px;
+    font-weight: 200;
+    font-size: 1.6rem;
 
     color: var(--section-02-title-color);
     text-align: center;
     letter-spacing: 2px;    
 }
 
-.section-02-card-container {
-    grid-column: 1;
-    grid-row: 2;
+.section-02-detail-container
+{
     display: flex;
+    flex-direction: row;
 
-    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
-.section-02-card-container div {
+.section-02-card-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    height: 100%;
+    width: 80%;
+}
+
+.section-02-card 
+{
     display: flex;
     flex-direction: column;
-
-    align-items: center;
+    align-items: flex-start;
 
     margin: 10px;
 }
 
-.section-02-card-container div h3 {
-    margin: 10px;
+.section-02-card h3
+{   
+    margin: 10px 0px 0px 10px;
 
     font-family: 'Libra-Serif-Modern';
-    font-weight: lighter;
+    font-weight: 200;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.5rem;
     
     color: var(--section-02-character-name-color);
-    text-align: center;
     letter-spacing: 2px;
+
+    text-align: start;
 }
 
-.section-02-card-container div img {
-    height: 350px;
-    width: 250px;
+.section-02-card img 
+{
+    height: 400px;
+    width: 300px;
     margin: 10px;
 }
 
-.section-02-character-card-one {
-    box-shadow: 15px 15px 0px 0px #ffd171;
-}
-
-.section-02-character-card-two {
+.section-02-card img:nth-child(1)
+{
     box-shadow: 15px 15px 0px 0px #4e6982;
 }
 
-.section-02-text-box {
-    grid-column: 2;
-    grid-row: 2;
-
-    background-image: url(/images/new-moon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+.section-02-card img:nth-child(2)
+{
+    box-shadow: 15px 15px 0px 0px #ffd171;
 }
 
-.section-02-text-box h3 {
-    margin-bottom: 10px;
+.section-02-text-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url(/images/lua_nova.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    text-align: justify;
+}
+
+.section-02-text-box h3 
+{
+    width: 90%;
+    margin-bottom: 15px;
 
     font-family: 'Libra-Serif-Modern';
-    font-weight: lighter;
+    font-weight: 300;
     font-style: italic;
-    font-size: 22px;
+    font-size: 1.5rem;
 
     color: var(--section-02-text-title-color);
     letter-spacing: 3px;
 }
 
-.section-02-text-box p {
-    width: 60%;
+.section-02-text-box p
+{
+    width: 90%;
 
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 1.3rem;
 
     color: var(--section-02-text-color);
+
     letter-spacing: 1px;
-    line-height: 30px;
-} */
+    word-spacing: 4px;
+    line-height: 35px;
+}

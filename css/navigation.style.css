@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'Libra-Serif-Modern';
-    src: url(/fonts/LibraSerifModern-Regular.otf) format('opentype');
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-Regular.ttf) format('truetype');
-}
-
 :root {
     --navigation-brand-name-color: #585c44;
     --navigation-navbar-item-color: #585c44;
@@ -75,7 +66,7 @@
 .brand-subtitle {
     font-family: 'Montserrat';
     font-size: 0.6rem;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 4px;
     text-transform: lowercase;
 }

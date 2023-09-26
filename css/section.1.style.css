@@ -1,12 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
 :root {
     --section-01-content-wrapper-background-color:#D1C9B9;
     --section-01-first-paragraph: #62684d;
@@ -57,7 +48,7 @@
     color: var(--section-01-first-paragraph);
     font-family: 'Libra-Serif-Modern';
     font-size: 1.6rem;
-    font-weight: lighter;
+    font-weight: 200;
     letter-spacing: 1.5px;
 }
 
@@ -67,7 +58,7 @@
     color: var(--section-01-second-paragraph);
     font-family: 'Montserrat';
     font-size: 1.25rem;
-    font-weight: lighter;
+    font-weight: 400;
     letter-spacing: 1.2px;
 }
 
