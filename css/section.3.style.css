@@ -90,6 +90,7 @@
 {
     display: flex;
     flex-direction: column;
+    row-gap: 15%;
 
     height: 100%;
 }
@@ -106,9 +107,9 @@
 
 .section-03-kanjis img
 {
-    height: 220px;
-    width: 60px;
-    margin: 20px 10px;
+    height: 140px;
+    width: 40px;
+    margin: 10px 10px;
 }
 
 
@@ -177,13 +178,17 @@
         word-spacing: 2px;
     }
 
+    .section-03-kanji-column
+    {
+        row-gap: 10%;
+    }
+
     .section-03-kanjis img
     {
-        height: 220px;
-        width: 60px;
-        margin: 40px 25px;
+        height: 180px;
+        width: 50px;
+        margin: 20px 25px;
     }
-    
 }
 
 /* Responsive design for screens equal or larger than 1536px */
@@ -206,5 +211,17 @@
         font-size: 1.3rem;
         word-spacing: 4px;
         line-height: 35px;
+    }
+
+    .section-03-kanji-column
+    {
+        row-gap: 5%;
+    }
+
+    .section-03-kanjis img
+    {
+        height: 220px;
+        width: 60px;
+        margin: 40px 25px;
     }
 }
