@@ -21,6 +21,7 @@
     background-attachment: fixed;
 }
 
+/*----------------- Title ---------------------------*/
 .section-02-title-container
 {
     display: flex;
@@ -42,6 +43,8 @@
     letter-spacing: 2px;    
 }
 
+/*----------------- Card and Text ---------------------------*/
+
 .section-02-detail-container
 {
     display: flex;
@@ -51,6 +54,7 @@
     width: 100%;
 }
 
+/*----------------- Card ---------------------------*/
 .section-02-card-container
 {
     display: flex;
@@ -103,6 +107,7 @@
     box-shadow: -10px -10px 0px 0px #ffd171, 10px 10px 0px 0px #4e6982;
 }
 
+/*----------------- Text ---------------------------*/
 .section-02-text-box
 {
     display: flex;
@@ -137,7 +142,7 @@
 .section-02-text-box p
 {
     width: 100%;
-    padding: 0px 10px;
+    padding: 10px;
 
     font-family: 'Montserrat';
     font-weight: 400;
@@ -258,7 +263,6 @@
         width: 90%;
         padding: 0px 0px 0px 15px;
         font-size: 1.2rem;
-        letter-spacing: 1px;
         word-spacing: 2px;
     }
 

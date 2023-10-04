@@ -18,9 +18,9 @@ body {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: 0.000001px;
-}
+} */
 
 .section {
     height: calc(100vh - 70px);

@@ -1,0 +1,210 @@
+:root
+{
+    --section-03-text-box-color: #62684d;
+}
+
+.section-03-content-wrapper 
+{
+    display: flex;
+    flex-direction: row;
+    
+    height: 100%;
+    width: 100%;
+
+    background-image: url(/images/background_granulado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*----------------- Bamboo ---------------------------*/
+.section-03-bamboo
+{
+    display: none;
+    height: 100%;
+    width: 20%;
+}
+
+.section-03-bamboo img
+{
+    height: 100%;
+    width: 200%;
+}
+
+/*----------------- Text ---------------------------*/
+.section-03-text-box
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+
+    color: var(--section-03-text-box-color);
+    text-align: justify;
+}
+
+.section-03-text-box-title
+{
+    font-family: 'Libra-Serif-Modern';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.section-03-text-box-item h3
+{
+    font-family: 'Libra-Serif-Modern';
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.section-03-text-box-item h3 span
+{
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+.section-03-text-box-item p
+{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+/*----------------- Kanjis ---------------------------*/
+.section-03-kanjis
+{
+    display: none;
+    flex-direction: row;
+
+    height: 100%;
+    width: 20%;
+}
+
+.section-03-kanji-column
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.section-03-kanji-column:nth-child(1)
+{
+    justify-content: flex-start;
+}
+
+.section-03-kanji-column:nth-child(2)
+{
+    justify-content: flex-end;
+}
+
+.section-03-kanjis img
+{
+    height: 220px;
+    width: 60px;
+    margin: 20px 10px;
+}
+
+
+@media (min-width: 640px) 
+{   
+    .section-03-text-box-title
+    {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .section-03-text-box-item h3
+    {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .section-03-text-box-item p
+    {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+}
+
+/* Responsive design for screens equal or larger than 768px */
+@media (min-width: 768px) 
+{
+    .section-03-bamboo
+    {
+        display: block;
+    }
+
+    .section-03-text-box
+    {  
+        width: 60%;
+        padding: 40px;
+    }
+
+    .section-03-kanjis
+    {
+        display: flex;
+    }
+}
+
+/* Responsive design for screens equal or larger than 1024px */
+@media (min-width: 1024px) 
+{
+    .section-03-text-box-title
+    {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+
+    .section-03-text-box-item h3
+    {
+        font-size: 1.5rem;
+    }
+
+    .section-03-text-box-item p
+    {
+        font-size: 1.2rem;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+
+    .section-03-kanjis img
+    {
+        height: 220px;
+        width: 60px;
+        margin: 40px 25px;
+    }
+    
+}
+
+/* Responsive design for screens equal or larger than 1536px */
+@media (min-width: 1536px) 
+{
+    .section-03-text-box-title
+    {
+        font-size: 1.6rem;
+        word-spacing: 4px;
+    }
+
+    .section-03-text-box-item h3
+    {
+        font-size: 1.6rem;
+        word-spacing: 4px;
+    }
+
+    .section-03-text-box-item p
+    {
+        font-size: 1.3rem;
+        word-spacing: 4px;
+        line-height: 35px;
+    }
+}
