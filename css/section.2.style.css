@@ -61,7 +61,7 @@
     flex-direction: row;
     justify-content: center;
 
-    height: 100%;
+    height: 50%;
     width: 100%;
 }
 
@@ -211,6 +211,11 @@
     .section-02-title-container h2
     {
         font-size: 1.5rem;  
+    }
+
+    .section-02-card-container
+    {
+        height: 100%;
     }
 
     .section-02-detail-container
