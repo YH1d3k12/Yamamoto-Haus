@@ -33,7 +33,7 @@
 }
 
 /*----------------- Text ---------------------------*/
-.section-01-container 
+.section-01-text-box
 {
     display: flex;
     flex-direction: column;
@@ -46,26 +46,18 @@
     z-index: 2;
 }
 
-.section-01-first-paragraph 
+.section-01-text-box h2
 {
     margin: 10px;
 
     color: var(--section-01-first-paragraph);
-    font-family: 'Libra-Serif-Modern';
-    font-size: 1.2rem;
-    font-weight: 200;
-    letter-spacing: 1.5px;
 }
 
-.section-01-second-paragraph 
+.section-01-text-box p:nth-child(2)
 {
     margin: 10px;
 
     color: var(--section-01-second-paragraph);
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1.2px;
 }
 
 /*----------------- Button  --------------------------*/
@@ -80,27 +72,25 @@
     background-color: var(--section-01-button-background-color);
     cursor: pointer;
     font-family: 'Libra-Serif-Modern';
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.2rem;
     letter-spacing: 1.5px;
 }
 
 @media (min-width: 640px) 
 {
-    .section-01-container 
+    .section-01-text-box
     {
         width: 70%;
     }
-    .section-01-first-paragraph 
+    .section-01-text-box p:nth-child(1)
     {
         margin: 15px;
-        font-size: 1.3rem;
     }
     
-    .section-01-second-paragraph 
+    .section-01-text-box p:nth-child(2)
     {
         margin: 15px;
-        font-size: 1.05rem;
     }
 
     .section-01-button 
@@ -114,16 +104,6 @@
 /* Responsive design for screens equal or larger than 768px */
 @media (min-width: 768px) 
 {
-    .section-01-first-paragraph 
-    {
-        font-size: 1.4rem;
-    }
-    
-    .section-01-second-paragraph 
-    {
-        font-size: 1.1rem;
-    }
-
     .section-01-button 
     {
         padding: 10px 20px;
@@ -134,16 +114,14 @@
 /* Responsive design for screens equal or larger than 1024px */
 @media (min-width: 1024px) 
 {
-    .section-01-first-paragraph 
+    .section-01-text-box p:nth-child(1) 
     {
         margin: 20px;
-        font-size: 1.6rem;
     }
     
-    .section-01-second-paragraph 
+    .section-01-text-box p:nth-child(2)
     {
         margin: 20px;
-        font-size: 1.25rem;
     }
 
     .section-01-button 
@@ -157,16 +135,6 @@
 /* Responsive design for screens equal or larger than 1536px */
 @media (min-width: 1536px) 
 {
-    .section-01-first-paragraph 
-    {
-        font-size: 1.8rem;
-    }
-    
-    .section-01-second-paragraph 
-    {
-        font-size: 1.3rem;
-    }
-
     .section-01-button 
     {
         font-size: 1.8rem;

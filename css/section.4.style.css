@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30%;
+    height: 40%;
     width: 100%;
     padding: 20px;
     color: var(--section-04-title-color);
@@ -37,24 +37,12 @@
 .section-04-text-box h2
 {
     margin-bottom: 20px;
-    
-    font-family: 'Libra-Serif-Modern';
     font-style: italic;
-    font-weight: 300;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
 }
 
 .section-04-text-box p
 {
     width: 100%;
-
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
 }
 
 .section-04-text-box p span
@@ -69,7 +57,7 @@
 {
     display: flex;
 
-    height: 70%;
+    height: 60%;
     width: 100%;
 
     overflow-x: auto;
@@ -83,9 +71,9 @@
     align-items: center;
     position: relative;
 
-    height: 240px;
-    width: 240px;
-    padding: 20px 10px;
+    height: 180px;
+    width: 180px;
+    padding: 10px 5px;
     margin: 20px;
 
     color: var(--section-04-note-color);
@@ -109,95 +97,42 @@
 
 .section-04-note-item h3
 {
-    margin-bottom: 20px;
-    
-    font-family: 'Libra-Serif-Modern';
+    margin: 10px 0px;
     font-style: italic;
-    font-weight: 300;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
 }
 
 .section-04-note-item p
 {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 0.8rem;
-
-    letter-spacing: 1px;
     line-height: 20px;
-    word-spacing: 2px;
 }
 
-@media (min-height: 768px) and (min-width: 1024px)
+@media (min-width: 640px)
 {
-    .section-04-note-container
-    {
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-evenly;
-
-        overflow-x: none;
-    }
-}
-@media (min-width: 640px) 
-{
-    .section-04-text-box h2
-    {
-        margin-bottom: 20px;
-        
-        font-family: 'Libra-Serif-Modern';
-        font-style: italic;
-        font-weight: 300;
-        font-size: 1.8rem;
-        letter-spacing: 2px;
-        word-spacing: 4px;
-    }
-    
-    .section-04-text-box p
-    {
-        width: 75%;
-    
-        font-family: 'Montserrat';
-        font-weight: 400;
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        word-spacing: 4px;
-    }
-    
     .section-04-note-item
     {
-        height: 330px;
-        width: 330px;
-        padding: 40px 20px;
+        height: 220px;
+        width: 220px;
+        padding: 10px;
         margin: 20px;
     }
-    
-    .section-04-note-item div
+}
+
+@media (min-width: 1024px)
+{   
+    .section-04-note-container
     {
-        top: -15px;
-    
-        height: 40px;
-        width: 40px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    .section-04-text-box
+    {
+        margin-left: 5%;
     }
     
-    .section-04-note-item h3
-    {
-        margin-bottom: 20px;
-        font-size: 1.7rem;
-        letter-spacing: 2px;
-        word-spacing: 4px;
-    }
-    
-    .section-04-note-item p
-    {
-        font-size: 1.3rem;
-    
-        letter-spacing: 2px;
-        line-height: 40px;
-        word-spacing: 4px;
-    }
 }
 
 @media (min-width: 1536px) 
@@ -205,32 +140,18 @@
     .section-04-text-box h2
     {
         margin-bottom: 20px;
-        
-        font-family: 'Libra-Serif-Modern';
-        font-style: italic;
-        font-weight: 300;
-        font-size: 1.8rem;
-        letter-spacing: 2px;
-        word-spacing: 4px;
     }
     
     .section-04-text-box p
     {
         width: 75%;
-    
-        font-family: 'Montserrat';
-        font-weight: 400;
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        word-spacing: 4px;
     }
     
     .section-04-note-item
     {
         height: 330px;
         width: 330px;
-        padding: 40px 20px;
-        margin: 20px;
+        padding: 20px;
     }
     
     .section-04-note-item div
@@ -241,20 +162,8 @@
         width: 40px;
     }
     
-    .section-04-note-item h3
-    {
-        margin-bottom: 20px;
-        font-size: 1.7rem;
-        letter-spacing: 2px;
-        word-spacing: 4px;
-    }
-    
     .section-04-note-item p
     {
-        font-size: 1.3rem;
-    
-        letter-spacing: 2px;
         line-height: 40px;
-        word-spacing: 4px;
     }
 }

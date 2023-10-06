@@ -26,31 +26,133 @@ body {
     height: calc(100vh - 70px);
 }
 
+.h2 {
+    font-size: 1.1rem;
+    font-family: 'Libra-Serif-Modern';
+    font-weight: 300;
+}
+
+.h3 {
+    font-size: 1rem;
+    font-family: 'Libra-Serif-Modern';
+    font-weight: 300;
+}
+
+.p {
+    font-size: 0.8rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+@media(min-width: 480px) {
+    .h2 {
+        font-size: 1.2rem;
+    }
+    
+    .h3 {
+        font-size: 1.1rem;
+    }
+    
+    .p {
+        font-size: 0.9rem;
+    }
+}
 
 /* Responsive design for screens equal or larger than 640px */
 @media (min-width: 640px) {
     .section {
         height: calc(100vh - 120px);
     }
+
+    .h2 {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+    
+    .h3 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    
+    .p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
 }
 
 /* Responsive design for screens equal or larger than 768px */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (min-height: 480px)  {
     .section {
         height: calc(100vh - 90px);
+    }
+    
+    .h2 {
+        font-size: 1.5rem;
+        word-spacing: 2px;
+    }
+    
+    .h3 {
+        font-size: 1.4rem;
+        word-spacing: 2px;
+    }
+    
+    .p {
+        font-size: 1.1rem;
+        word-spacing: 2px;
     }
 }
 
 /* Responsive design for screens equal or larger than 1024px */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 640px) {
     .section {
         height: calc(100vh - 150px);
+    }
+
+    .h2 {
+        letter-spacing: 2px;
+    }
+    
+    .h3 {
+        letter-spacing: 2px;
+    }
+    
+    .p {
+        letter-spacing: 2px;
+    }
+}
+
+@media (min-width: 1280px) and (min-height: 640px) {
+    .h2 {
+        font-size: 1.6rem;
+    }
+    
+    .h3 {
+        font-size: 1.5rem;
+    }
+    
+    .p {
+        font-size: 1.2rem;
     }
 }
 
 /* Responsive design for screens equal or larger than 1536px */
-@media (min-width: 1536px) {
+@media (min-width: 1536px) and (min-height: 768px) {
     .section {
         height: calc(100vh - 180px);
+    }
+            
+    .h2 {
+        font-size: 1.8rem;
+        word-spacing: 4px;
+    }
+    
+    .h3 {
+        font-size: 1.7rem;
+        word-spacing: 4px;
+    }
+    
+    .p {
+        font-size: 1.2rem;
+        word-spacing: 4px;
     }
 }

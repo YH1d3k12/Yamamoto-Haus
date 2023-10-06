@@ -42,40 +42,24 @@
 
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 0px 20px;
 
     color: var(--section-03-text-box-color);
     text-align: justify;
 }
 
-.section-03-text-box-title
+.section-03-text-box h2
 {
-    font-family: 'Libra-Serif-Modern';
     font-style: italic;
-    font-weight: 300;
-    font-size: 1.1rem;
 }
 
-.section-03-text-box-item h3
-{
-    font-family: 'Libra-Serif-Modern';
-    font-weight: 300;
-    font-size: 1rem;
-}
 
 .section-03-text-box-item h3 span
 {
     font-style: italic;
-    font-weight: 700;
+    font-weight: 600;
 }
 
-
-.section-03-text-box-item p
-{
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 0.8rem;
-}
 /*----------------- Kanjis ---------------------------*/
 .section-03-kanjis
 {
@@ -115,22 +99,8 @@
 
 @media (min-width: 640px) 
 {   
-    .section-03-text-box-title
-    {
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-    }
-
-    .section-03-text-box-item h3
-    {
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-    }
-
     .section-03-text-box-item p
     {
-        font-size: 1rem;
-        letter-spacing: 1px;
         line-height: 20px;
     }
 }
@@ -158,26 +128,6 @@
 /* Responsive design for screens equal or larger than 1024px */
 @media (min-width: 1024px) 
 {
-    .section-03-text-box-title
-    {
-        font-size: 1.6rem;
-        letter-spacing: 2px;
-        word-spacing: 2px;
-    }
-
-    .section-03-text-box-item h3
-    {
-        font-size: 1.5rem;
-    }
-
-    .section-03-text-box-item p
-    {
-        font-size: 1.2rem;
-        word-spacing: 2px;
-        letter-spacing: 2px;
-        word-spacing: 2px;
-    }
-
     .section-03-kanji-column
     {
         row-gap: 10%;
@@ -194,22 +144,8 @@
 /* Responsive design for screens equal or larger than 1536px */
 @media (min-width: 1536px) 
 {
-    .section-03-text-box-title
-    {
-        font-size: 1.8rem;
-        word-spacing: 4px;
-    }
-
-    .section-03-text-box-item h3
-    {
-        font-size: 1.7rem;
-        word-spacing: 4px;
-    }
-
     .section-03-text-box-item p
     {
-        font-size: 1.3rem;
-        word-spacing: 4px;
         line-height: 35px;
     }
 
