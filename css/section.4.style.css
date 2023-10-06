@@ -73,7 +73,7 @@
 
     height: 180px;
     width: 180px;
-    padding: 10px 5px;
+    padding: 10px;
     margin: 20px;
 
     color: var(--section-04-note-color);
@@ -112,27 +112,32 @@
     {
         height: 220px;
         width: 220px;
-        padding: 10px;
-        margin: 20px;
     }
 }
 
 @media (min-width: 1024px)
 {   
+    .section-04-text-box h2
+    {
+        margin-left: 8%;
+    }
+
+    .section-04-text-box p
+    {
+        width: 75%;
+        margin-left: 8%;
+    }
+
     .section-04-note-container
     {
-        align-items: flex-start;
-        justify-content: space-evenly;
+        width: 80%;
     }
-}
 
-@media (min-width: 1280px)
-{
-    .section-04-text-box
+    .section-04-note-item
     {
-        margin-left: 5%;
+        height: 260px;
+        width: 260px;
     }
-    
 }
 
 @media (min-width: 1536px) 
@@ -140,11 +145,6 @@
     .section-04-text-box h2
     {
         margin-bottom: 20px;
-    }
-    
-    .section-04-text-box p
-    {
-        width: 75%;
     }
     
     .section-04-note-item
