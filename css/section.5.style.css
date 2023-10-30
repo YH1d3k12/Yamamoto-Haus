@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
 
-    height: 20%;
+    height: 10%;
     width: 100%;
 
     color: var(--section-05-title-color);
@@ -34,186 +34,64 @@
 
 .section-05-image-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-
-    height: 80%;
-    width: 85%;
-}
-
-.section-05-image-container img {
-    position: relative;
-
-    background-color: black;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.section-05-image-container img:hover {
-    transform: scale(1.2);
-}
-
-.section-05-image-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-    height: 100%;
-    width: 33%;
+    
+    height: 75%;
+    width: 100%;
 }
 
 .section-05-image-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 
+    height: 50%;
     width: 100%;
+    padding: 10px;
 }
 
-/*----------------- Big Pictures ---------------------------*/
+.section-05-box-small {
+    aspect-ratio: 1/1;
+    height: 100%;
+    background-color: #62684d;
+}
 
-.section-05-gallery-01,
-.section-05-gallery-05 {
+.section-05-box-medium {
+    aspect-ratio: 4/3;
+    height: 100%;
+    background-color: #9F4F39;
+}
+
+.section-05-box-large {
+    aspect-ratio: 16/9;
+    height: 100%;
+    background-color: black;
+}
+
+.section-05-image-container img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
-.section-05-gallery-01 {
-    background-image: url(/images/gallery/1.jpg);
-    
-    animation: firstGallery 32s infinite;
-}
+/*----------------- Button ---------------------------*/
+.section-05-button 
+{
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin: 10px;
 
-.section-05-gallery-05 {
-    background-image: url(/images/gallery/5.jpg);
-
-    animation: fithGallery 25.6s infinite;
-}
-
-.section-05-gallery-01::before,
-.section-05-gallery-05::before {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
-@keyframes firstGallery {
-    20% {
-        background-image: url(/images/gallery/1.jpg);
-    }
-    40% {
-        background-image: url(/images/gallery/2.jpg);
-    }
-    60% {
-        background-image: url(/images/gallery/3.jpg);
-    }
-    80% {
-        background-image: url(/images/gallery/4.jpg);
-    }
-    100% {
-        background-image: url(/images/gallery/1.jpg);
-    }
-}
-
-@keyframes fithGallery {
-    25% {
-        background-image: url(/images/gallery/5.jpg);
-    }
-    50% {
-        background-image: url(/images/gallery/6.jpg);
-    }
-    75% {
-        background-image: url(/images/gallery/13.jpg);
-    }
-    100% {
-        background-image: url(/images/gallery/5.jpg);
-    }
-}
-
-/*----------------- Medium Picture ---------------------------*/
-
-.section-05-gallery-02 {
-    width: 100%;
-}
-
-.section-05-gallery-02 {
-    background-image: url(/images/gallery/7.jpg);
-
-    animation: secondGallery 19.2s infinite;
-}
-
-.section-05-gallery-02::before {
-    content: "";
-    display: block;
-    padding-bottom: 60%;
-}
-
-@keyframes secondGallery {
-    33% {
-        background-image: url(/images/gallery/7.jpg);
-    }
-    66% {
-        background-image: url(/images/gallery/8.jpg);
-    }
-    100% {
-        background-image: url(/images/gallery/7.jpg);
-    }
-}
-
-/*----------------- Small Pictures ---------------------------*/
-
-.section-05-gallery-03,
-.section-05-gallery-04 {
-    width: 50%;
-    background-position: center;
-}
-
-.section-05-gallery-03 {
-    background-image: url(/images/gallery/9.jpg);
-
-    animation: thirdGallery 19.2s infinite;
-}
-
-.section-05-gallery-04 {
-    background-image: url(/images/gallery/11.jpg);
-
-    animation: fourthGallery 19.2s infinite;
-}
-
-.section-05-gallery-03::before,
-.section-05-gallery-04::before {
-    content: "";
-    display: block;
-    padding-bottom: 75%;
-}
-
-@keyframes thirdGallery {
-    33% {
-        background-image: url(/images/gallery/9.jpg);
-    }
-    66% {
-        background-image: url(/images/gallery/10.jpg);
-    }
-    100% {
-        background-image: url(/images/gallery/9.jpg);
-    }
-}
-
-@keyframes fourthGallery {
-    33% {
-        background-image: url(/images/gallery/11.jpg);
-    }
-    66% {
-        background-image: url(/images/gallery/12.jpg);
-    }
-    100% {
-        background-image: url(/images/gallery/11.jpg);
-    }
+    color: #ffffff;
+    background-color: #ae172e;
+    cursor: pointer;
+    font-family: 'Libra-Serif-Modern';
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
 }
 
 
