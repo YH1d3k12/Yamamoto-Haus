@@ -25,6 +25,7 @@ body {
 
 .sections {
     height: calc(100vh - 70px);
+    overflow: hidden;
 }
 
 .h2 {
