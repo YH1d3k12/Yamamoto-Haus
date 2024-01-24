@@ -62,7 +62,7 @@
 }
 
 .about-section-text-box h3 {
-    width: 100%;
+    align-self: flex-start;
     padding: 0px 20px;
     margin-bottom: 5px;
 
@@ -71,34 +71,19 @@
 }
 
 .about-section-text-box p {
-    width: 100%;
     padding: 0px 20px;
     color: var(--about-section-text-color);
     line-height: 18px;
 }
 
 @media (min-width: 640px) and (min-height: 360px) {
-    .about-section-card img {
-        height: 150px;
-        width: 150px;
-    }
-
     .about-section-text-box p {
         line-height: 20px;
     }
 }
 
-/* Responsive design for screens equal or larger than 768px */
-@media (min-width: 768px) {
-    .about-section-card img {
-        height: 220px;
-        width: 220px;
-    }
-}
-
 /* Responsive design for screens equal or larger than 1024px */
 @media (min-width: 1024px) {
-
     .about-section-title-container {
         height: 20%;
     }
@@ -109,26 +94,11 @@
     }
 
     .about-section-card-container {
-        height: 100%;
-        width: 60%;
-    }
-
-    .about-section-card img {
-        height: 275px;
-        width: 225px;
-    }
-
-    .about-section-card:nth-child(2) img {
-        box-shadow: 15px 15px 0px 0px #ffd171;
-    }
-
-    .about-section-card:nth-child(3) img {
-        box-shadow: 15px 15px 0px 0px #4e6982;
+        width: 50%;
     }
 
     .about-section-text-box {
-        height: 100%;
-        width: 40%;
+        width: 50%;
     }
 
     .about-section-text-box h3 {
@@ -153,29 +123,5 @@
     .about-section-text-box p {
         padding: 0px 40px 0px 0px;
         line-height: 35px;
-    }
-}
-
-/* Responsive design for screens equal or larger than 1536px */
-@media (min-width: 1536px) {
-    .about-section-title-container {
-        height: 30%;
-    }
-
-    .about-section-detail-container {
-        height: 70%;
-    }
-
-    .about-section-card-container {
-        width: 45%;
-    }
-
-    .about-section-text-box {
-        width: 55%;
-    }
-
-    .about-section-card img {
-        height: 400px;
-        width: 300px;
     }
 }

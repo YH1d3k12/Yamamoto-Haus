@@ -45,3 +45,45 @@
         display: flex;
     }
 }
+
+@media (min-width: 280px) and (min-height: 768px) {
+    .about-section-card:nth-child(1) {
+        display: none;
+    }
+
+    .about-section-card:nth-child(2),
+    .about-section-card:nth-child(3) {
+        display: flex;
+    }
+
+    .about-section-card:nth-child(2) img {
+        box-shadow: 15px 15px 0px 0px #ffd171;
+    }
+
+    .about-section-card:nth-child(3) img {
+        box-shadow: 15px 15px 0px 0px #4e6982;
+    }
+}
+
+/* Responsive design for screens equal or larger than 768px */
+/* @media (min-width: 768px) {
+    .about-section-card img {
+        height: 220px;
+        width: 220px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-section-card img {
+        height: 275px;
+        width: 225px;
+    }
+} */
+
+/* Responsive design for screens equal or larger than 1536px */
+/* @media (min-width: 1536px) {
+    .about-section-card img {
+        height: 400px;
+        width: 300px;
+    }
+} */
