@@ -14,11 +14,6 @@
     list-style: none;
 }
 
-body {
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-}
-
 /* body::-webkit-scrollbar {
     width: 0.000001px;
 } */
@@ -67,7 +62,7 @@ body {
 }
 
 /* Responsive design for screens equal or larger than 640px */
-@media (min-width: 640px) and (min-height: 360px) {
+@media (min-width: 640px) and (min-height: 480px) {
 
     .sections-container,
     .sections {
@@ -91,7 +86,7 @@ body {
 }
 
 /* Responsive design for screens equal or larger than 768px */
-@media (min-width: 768px) and (min-height: 480px) {
+@media (min-width: 768px) and (min-height: 640px) {
 
     .sections-container,
     .sections {
@@ -115,7 +110,7 @@ body {
 }
 
 /* Responsive design for screens equal or larger than 1024px */
-@media (min-width: 1024px) and (min-height: 640px) {
+@media (min-width: 1024px) and (min-height: 768px) {
 
     .sections-container,
     .sections {
