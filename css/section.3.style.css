@@ -1,13 +1,10 @@
-:root
-{
-    --section-03-text-box-color: #62684d;
+:root {
+    --values-section-text-box-color: #62684d;
 }
 
-.section-03-content-wrapper 
-{
-    display: flex;
-    flex-direction: row;
-    
+.values-section-content-wrapper {
+    position: relative;
+
     height: 100%;
     width: 100%;
 
@@ -19,145 +16,95 @@
 }
 
 /*----------------- Bamboo ---------------------------*/
-.section-03-bamboo
-{
+.values-section-bamboo {
     display: none;
-    height: 100%;
-    width: 20%;
-}
-
-.section-03-bamboo img
-{
-    height: 100%;
-    width: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: min(100%, 800px);
+    width: min(35%, 500px);
+    border: solid 1px red;
 }
 
 /*----------------- Text ---------------------------*/
-.section-03-text-box
-{
+.values-section-text-box {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-evenly;
 
     height: 100%;
-    width: 100%;
+    width: min(100%, 1000px);
     padding: 0px 20px;
+    margin-inline: auto;
 
-    color: var(--section-03-text-box-color);
+    color: var(--values-section-text-box-color);
     text-align: justify;
 }
 
-.section-03-text-box h2
-{
+.values-section-text-box h2 {
     font-style: italic;
 }
 
 
-.section-03-text-box-item h3 span
-{
+.values-section-text-box-item h3 span {
     font-style: italic;
     font-weight: 600;
 }
 
 /*----------------- Kanjis ---------------------------*/
-.section-03-kanjis
-{
+.values-section-kanjis {
     display: none;
-    flex-direction: row;
-
-    height: 100%;
-    width: 20%;
-}
-
-.section-03-kanji-column
-{
-    display: flex;
-    flex-direction: column;
-    row-gap: 15%;
-
-    height: 100%;
-}
-
-.section-03-kanji-column:nth-child(1)
-{
-    justify-content: flex-start;
-}
-
-.section-03-kanji-column:nth-child(2)
-{
-    justify-content: flex-end;
-}
-
-.section-03-kanjis img
-{
+    position: absolute;
     height: 140px;
     width: 40px;
-    margin: 10px 10px;
 }
 
+.values-section-kanjis:nth-of-type(5) {
+    bottom: 20%;
+    right: 10%;
+}
 
-@media (min-width: 640px) 
-{   
-    .section-03-text-box-item p
-    {
+.values-section-kanjis:nth-of-type(2) {
+    top: 0;
+    right: 15%;
+}
+
+.values-section-kanjis:nth-of-type(3) {
+    bottom: 40%;
+    right: 15%;
+}
+
+.values-section-kanjis:nth-of-type(4) {
+    top: 20%;
+    right: 10%;
+}
+
+@media (min-width: 640px) {
+    .values-section-text-box-item p {
         line-height: 20px;
     }
 }
 
 /* Responsive design for screens equal or larger than 768px */
-@media (min-width: 768px) 
-{
-    .section-03-bamboo
-    {
-        display: block;
-    }
-
-    .section-03-text-box
-    {  
-        width: 60%;
-        padding: 40px;
-    }
-
-    .section-03-kanjis
-    {
-        display: flex;
-    }
-}
+@media (min-width: 768px) {}
 
 /* Responsive design for screens equal or larger than 1024px */
-@media (min-width: 1024px) 
-{
-    .section-03-kanji-column
-    {
-        row-gap: 10%;
-    }
-
-    .section-03-kanjis img
-    {
+/* @media (min-width: 1024px) {
+    .values-section-kanjis {
         height: 180px;
         width: 50px;
-        margin: 20px 25px;
     }
-}
+} */
 
 /* Responsive design for screens equal or larger than 1536px */
-@media (min-width: 1536px) 
-{
-    .section-03-text-box-item p
-    {
+/* @media (min-width: 1536px) {
+    .values-section-text-box-item p {
         line-height: 35px;
     }
 
-    .section-03-kanji-column
-    {
-        row-gap: 5%;
-    }
-
-    .section-03-kanjis img
-    {
+    .values-section-kanjis {
         height: 220px;
         width: 60px;
-        margin: 40px 25px;
     }
-}
+} */
