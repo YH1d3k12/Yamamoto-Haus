@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: flex-start;
 
-    height: 100%;
+    height: min(100%, 800px);
     width: 100%;
 
     background-image: url(/images/lua_nova.png);
