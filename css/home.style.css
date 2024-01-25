@@ -15,7 +15,7 @@
 }
 
 body {
-    overflow-y: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
 }
 
@@ -23,9 +23,15 @@ body {
     width: 0.000001px;
 } */
 
+.sections-container {
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
 .sections {
     height: calc(100vh - 70px);
-    overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .h2 {
@@ -62,6 +68,8 @@ body {
 
 /* Responsive design for screens equal or larger than 640px */
 @media (min-width: 640px) and (min-height: 360px) {
+
+    .sections-container,
     .sections {
         height: calc(100vh - 120px);
     }
@@ -84,6 +92,8 @@ body {
 
 /* Responsive design for screens equal or larger than 768px */
 @media (min-width: 768px) and (min-height: 480px) {
+
+    .sections-container,
     .sections {
         height: calc(100vh - 90px);
     }
@@ -106,6 +116,8 @@ body {
 
 /* Responsive design for screens equal or larger than 1024px */
 @media (min-width: 1024px) and (min-height: 640px) {
+
+    .sections-container,
     .sections {
         height: calc(100vh - 150px);
     }
@@ -139,6 +151,8 @@ body {
 
 /* Responsive design for screens equal or larger than 1536px */
 @media (min-width: 1536px) and (min-height: 1024px) {
+
+    .sections-container,
     .sections {
         height: calc(100vh - 180px);
     }
