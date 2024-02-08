@@ -49,6 +49,7 @@
 .about-section-text-box {
     display: flex;
     flex-direction: column;
+    align-self: center;
     align-items: center;
     justify-content: flex-start;
 
@@ -82,8 +83,8 @@
 }
 
 @media (min-width: 640px) and (min-height: 360px) {
-    .about-section-text-box p {
-        line-height: 20px;
+    .about-section-text-box div p {
+        line-height: 24px;
     }
 }
 

@@ -13,20 +13,19 @@
     align-items: center;
 
     width: min(50%, 280px);
+    margin-bottom: 20px;
 }
 
 .about-section-card img {
-    width: 80%;
+    width: 90%;
     aspect-ratio: 1/1;
 }
 
-.about-section-card:nth-child(3) {
-    margin-right: max(20px, 5%);
-}
-
 .about-section-card h3 {
+    width: 90%;
     color: var(--about-section-character-name-color);
     font-style: italic;
+    text-align: center;
 }
 
 .about-section-card:nth-child(2) h3 {
@@ -34,7 +33,7 @@
 }
 
 .about-section-card:nth-child(3) h3 {
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .about-section-card:nth-child(1) img {
@@ -49,12 +48,6 @@
 }
 
 @media (min-width: 320px) and (min-height: 600px) {
-    .about-section-card-container {
-        justify-content: right;
-
-        width: 100%;
-    }
-
     .about-section-card:nth-child(1) {
         display: none;
     }
@@ -68,6 +61,46 @@
         aspect-ratio: 3/4;
     }
 
+    .about-section-card:nth-child(2) h3 {
+        background-color: #ffd171;
+        padding: 5px 3px;
+    }
+
+    .about-section-card:nth-child(3) h3 {
+        color: #e6e1d7;
+        background-color: #4e6982;
+        padding: 5px 0px;
+    }
+}
+
+/* Responsive design for screens equal or larger than 768px */
+@media (min-width: 1024px) and (min-height: 640px) {
+    .about-section-card-container {
+        justify-content: right;
+    }
+
+    .about-section-card:nth-child(3) {
+        margin-right: max(20px, 5%);
+    }
+
+    .about-section-card img {
+        width: 80%;
+    }
+
+    .about-section-card h3 {
+        width: 100%;
+    }
+
+    .about-section-card:nth-child(2) h3 {
+        background-color: transparent;
+    }
+
+    .about-section-card:nth-child(3) h3 {
+        margin-top: 15px;
+        color: var(--about-section-character-name-color);
+        background-color: transparent;
+    }
+
     .about-section-card:nth-child(2) img {
         box-shadow: 15px 15px 0px 0px #ffd171;
     }
@@ -76,11 +109,3 @@
         box-shadow: 15px 15px 0px 0px #4e6982;
     }
 }
-
-/* Responsive design for screens equal or larger than 768px */
-@media (min-width: 768px) and (min-height: 480px) {}
-
-@media (min-width: 1024px) and (min-height: 640px) {}
-
-/* Responsive design for screens equal or larger than 1536px */
-@media (min-width: 1536px) and (min-height: 768px) {}

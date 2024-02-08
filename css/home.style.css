@@ -48,6 +48,11 @@
     font-weight: 400;
 }
 
+span {
+    font-style: italic;
+    font-weight: 600;
+}
+
 @media(min-width: 480px) and (min-height: 320px) {
     .h2 {
         font-size: 1.2rem;
