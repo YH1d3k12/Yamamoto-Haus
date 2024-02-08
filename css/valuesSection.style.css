@@ -9,7 +9,7 @@
 
     height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 5px max(20px, 2%);
 
     background-image: url(/images/background_granulado.png);
     background-size: cover;
@@ -33,7 +33,6 @@
 
 /*----------------- Text ---------------------------*/
 .values-section-text-box {
-    position: relative;
     height: 100%;
     width: min(100%, 1000px);
 
@@ -47,7 +46,8 @@
 }
 
 .values-section-text-box-item {
-    margin: 10px 0px;
+    position: relative;
+    margin: max(10px, 5%) 0px;
 }
 
 .values-section-text-box-item p {
@@ -61,36 +61,33 @@
 .values-section-kanjis {
     display: none;
     position: absolute;
-    height: 120px;
-    width: 30px;
-    opacity: 0.7;
+    top: 0px;
+    left: -35px;
+
+    height: max(60%, 90px);
+    aspect-ratio: 1/4;
     z-index: 1;
 }
 
-@media (min-width: 280px) and (min-height: 640px) {
+@media (min-width: 360px) and (min-height: 640px) {
     .values-section-kanjis {
         display: block;
     }
 
-    .values-section-kanjis:nth-of-type(1) {
-
-        bottom: 3%;
-        left: 10%;
+    .values-section-text-box-item {
+        margin-bottom: max(40px, 5%);
     }
 
-    .values-section-kanjis:nth-of-type(2) {
-        bottom: 7%;
-        left: 30%;
+    .values-section-text-box-item:nth-of-type(1),
+    .values-section-text-box-item:nth-of-type(2) {
+        margin-left: auto;
+        width: 90%;
     }
 
-    .values-section-kanjis:nth-of-type(3) {
-        bottom: 3%;
-        right: 30%;
-    }
-
-    .values-section-kanjis:nth-of-type(4) {
-        bottom: 7%;
-        right: 10%;
+    .values-section-text-box-item:nth-of-type(3),
+    .values-section-text-box-item:nth-of-type(4) {
+        margin-left: auto;
+        width: 70%;
     }
 }
 
@@ -105,11 +102,7 @@
 
 @media (min-width: 640px) and (min-height: 480px) {
     .values-section-text-box h2 {
-        margin: 20px 0px;
-    }
-
-    .values-section-text-box-item {
-        margin: 20px 0px;
+        margin-bottom: max(10px, 5%);
     }
 
     .values-section-text-box-item p {
@@ -118,13 +111,21 @@
 }
 
 /* Responsive design for screens equal or larger than 768px */
-@media (min-width: 1024px) and (min-height: 768px) {
-    .values-section-text-box h2 {
-        margin: 40px 0px;
+@media (min-width: 1024px) and (min-height: 640px) {
+    .values-section-text-box-item {
+        width: 100% !important;
+        margin-left: 0px !important;
     }
 
-    .values-section-text-box-item {
-        margin: 40px 0px;
+    .values-section-kanjis {
+        top: 0px;
+        left: calc(100% + 20px);
+        height: max(60%, 140px);
+    }
+
+    .values-section-text-box-item:nth-of-type(odd) .values-section-kanjis {
+        top: 0px;
+        left: calc(100% + 80px);
     }
 }
 
