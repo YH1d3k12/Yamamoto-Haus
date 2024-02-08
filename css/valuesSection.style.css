@@ -33,6 +33,7 @@
 
 /*----------------- Text ---------------------------*/
 .values-section-text-box {
+    position: relative;
     height: 100%;
     width: min(100%, 1000px);
 
@@ -60,30 +61,37 @@
 .values-section-kanjis {
     display: none;
     position: absolute;
-    height: 140px;
-    width: 40px;
+    height: 120px;
+    width: 30px;
     opacity: 0.7;
     z-index: 1;
 }
 
-.values-section-kanjis:nth-of-type(5) {
-    bottom: 20%;
-    right: 10%;
-}
+@media (min-width: 280px) and (min-height: 640px) {
+    .values-section-kanjis {
+        display: block;
+    }
 
-.values-section-kanjis:nth-of-type(2) {
-    top: 0;
-    right: 15%;
-}
+    .values-section-kanjis:nth-of-type(1) {
 
-.values-section-kanjis:nth-of-type(3) {
-    bottom: 40%;
-    right: 15%;
-}
+        bottom: 3%;
+        left: 10%;
+    }
 
-.values-section-kanjis:nth-of-type(4) {
-    top: 20%;
-    right: 10%;
+    .values-section-kanjis:nth-of-type(2) {
+        bottom: 7%;
+        left: 30%;
+    }
+
+    .values-section-kanjis:nth-of-type(3) {
+        bottom: 3%;
+        right: 30%;
+    }
+
+    .values-section-kanjis:nth-of-type(4) {
+        bottom: 7%;
+        right: 10%;
+    }
 }
 
 @media (min-width: 280px) and (min-height: 320px) {
@@ -100,25 +108,17 @@
         margin: 20px 0px;
     }
 
-    .values-section-text-box-item p {
-        line-height: 20px;
-    }
-
     .values-section-text-box-item {
         margin: 20px 0px;
+    }
+
+    .values-section-text-box-item p {
+        line-height: 20px;
     }
 }
 
 /* Responsive design for screens equal or larger than 768px */
 @media (min-width: 1024px) and (min-height: 768px) {
-    .values-section-bamboo {
-        display: block;
-    }
-
-    .values-section-kanjis {
-        display: block;
-    }
-
     .values-section-text-box h2 {
         margin: 40px 0px;
     }
