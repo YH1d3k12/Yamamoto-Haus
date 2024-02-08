@@ -2,10 +2,9 @@
 .about-section-card-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 
     width: 100%;
-    margin: 10px 0px;
 }
 
 .about-section-card {
@@ -13,14 +12,21 @@
     flex-direction: column;
     align-items: center;
 
-    width: min(50%, 350px);
-    margin: 10px;
+    width: min(50%, 280px);
+}
+
+.about-section-card img {
+    width: 80%;
+    aspect-ratio: 1/1;
+}
+
+.about-section-card:nth-child(3) {
+    margin-right: max(20px, 5%);
 }
 
 .about-section-card h3 {
-    font-style: italic;
     color: var(--about-section-character-name-color);
-    text-align: start;
+    font-style: italic;
 }
 
 .about-section-card:nth-child(2) h3 {
@@ -31,11 +37,6 @@
     margin-top: 15px;
 }
 
-.about-section-card img {
-    height: 130px;
-    width: 130px;
-}
-
 .about-section-card:nth-child(1) img {
     box-shadow: -10px -10px 0px 0px #ffd171, 10px 10px 0px 0px #4e6982;
 }
@@ -43,10 +44,17 @@
 @media (min-height: 640px) {
     .about-section-card:nth-child(1) {
         display: flex;
+        margin: 20px;
     }
 }
 
 @media (min-width: 320px) and (min-height: 600px) {
+    .about-section-card-container {
+        justify-content: right;
+
+        width: 100%;
+    }
+
     .about-section-card:nth-child(1) {
         display: none;
     }
@@ -56,6 +64,10 @@
         display: flex;
     }
 
+    .about-section-card img {
+        aspect-ratio: 3/4;
+    }
+
     .about-section-card:nth-child(2) img {
         box-shadow: 15px 15px 0px 0px #ffd171;
     }
@@ -63,32 +75,12 @@
     .about-section-card:nth-child(3) img {
         box-shadow: 15px 15px 0px 0px #4e6982;
     }
-
-    .about-section-card img {
-        height: 165px;
-        width: 130px;
-    }
 }
 
 /* Responsive design for screens equal or larger than 768px */
-@media (min-width: 768px) and (min-height: 480px) {
-    .about-section-card img {
-        height: 200px;
-        width: 165px;
-    }
-}
+@media (min-width: 768px) and (min-height: 480px) {}
 
-@media (min-width: 1024px) and (min-height: 640px) {
-    .about-section-card img {
-        height: 275px;
-        width: 225px;
-    }
-}
+@media (min-width: 1024px) and (min-height: 640px) {}
 
 /* Responsive design for screens equal or larger than 1536px */
-@media (min-width: 1536px) and (min-height: 768px) {
-    .about-section-card img {
-        height: 400px;
-        width: 300px;
-    }
-}
+@media (min-width: 1536px) and (min-height: 768px) {}

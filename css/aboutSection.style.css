@@ -11,7 +11,7 @@
 
     height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 5px max(20px, 2%);
 
     background-image: url(/images/background_granulado.png);
     background-size: cover;
@@ -23,12 +23,12 @@
 /*----------------- Title ---------------------------*/
 .about-section-title-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     height: 10%;
     width: 100%;
-    margin-top: 20px;
+    margin-bottom: max(10px, 2%);
 }
 
 .about-section-title-container h2 {
@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
 
-    height: 90%;
+    height: 80%;
     width: 100%;
 }
 
@@ -52,28 +52,32 @@
     align-items: center;
     justify-content: flex-start;
 
-    height: min(100%, 800px);
-    width: 100%;
-
-    background-image: url(/images/lua_nova.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: min(100%, 900px);
+    width: min(100%, 560px);
 
     text-align: justify;
 }
 
 .about-section-text-box h3 {
     align-self: flex-start;
-    padding: 0px 20px;
     margin-bottom: 5px;
 
     font-style: italic;
     color: var(--about-section-text-title-color);
 }
 
-.about-section-text-box p {
-    padding: 0px 20px;
+.about-section-text-box div {
+    display: flex;
+    flex-direction: column;
+    gap: max(10px, 2%);
     color: var(--about-section-text-color);
+
+    background-image: url(/images/lua_nova.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-section-text-box div p {
     line-height: 18px;
 }
 
@@ -98,10 +102,6 @@
         width: 50%;
     }
 
-    .about-section-text-box {
-        width: 50%;
-    }
-
     .about-section-text-box h3 {
         margin-bottom: 10px;
     }
@@ -112,17 +112,11 @@
         width: 50%;
     }
 
-    .about-section-text-box {
-        width: 50%;
-    }
-
     .about-section-text-box h3 {
-        padding: 0px 40px 0px 0px;
         margin-bottom: 15px;
     }
 
-    .about-section-text-box p {
-        padding: 0px 40px 0px 0px;
+    .about-section-text-box div p {
         line-height: 35px;
     }
 }
