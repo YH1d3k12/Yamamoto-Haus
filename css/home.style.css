@@ -21,6 +21,7 @@
 .sections-container {
     height: calc(100vh - 70px);
     overflow-y: scroll;
+    scroll-behavior: smooth !important;
     scroll-snap-type: y mandatory;
 }
 

@@ -4,6 +4,8 @@
 
 .values-section-content-wrapper {
     position: relative;
+    display: flex;
+    justify-content: center;
 
     height: 100%;
     width: 100%;
@@ -31,15 +33,8 @@
 
 /*----------------- Text ---------------------------*/
 .values-section-text-box {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-
     height: 100%;
     width: min(100%, 1000px);
-    margin-inline: auto;
 
     color: var(--values-section-text-box-color);
     text-align: justify;
@@ -50,10 +45,15 @@
     font-style: italic;
 }
 
+.values-section-text-box-item {
+    margin: 10px 0px;
+}
 
-.values-section-text-box-item h3 span {
-    font-style: italic;
-    font-weight: 600;
+.values-section-text-box-item p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /*----------------- Kanjis ---------------------------*/
@@ -86,20 +86,45 @@
     right: 10%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 280px) and (min-height: 320px) {
+    .values-section-text-box-item p {
+        display: block;
+        -webkit-line-clamp: initial;
+        -webkit-box-orient: horizontal;
+        overflow: visible;
+    }
+}
+
+@media (min-width: 640px) and (min-height: 480px) {
+    .values-section-text-box h2 {
+        margin: 20px 0px;
+    }
+
     .values-section-text-box-item p {
         line-height: 20px;
+    }
+
+    .values-section-text-box-item {
+        margin: 20px 0px;
     }
 }
 
 /* Responsive design for screens equal or larger than 768px */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 768px) {
     .values-section-bamboo {
         display: block;
     }
 
     .values-section-kanjis {
         display: block;
+    }
+
+    .values-section-text-box h2 {
+        margin: 40px 0px;
+    }
+
+    .values-section-text-box-item {
+        margin: 40px 0px;
     }
 }
 
