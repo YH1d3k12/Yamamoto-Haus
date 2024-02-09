@@ -74,7 +74,7 @@
     color: var(--about-section-text-color);
 
     background-image: url(/images/lua_nova.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
