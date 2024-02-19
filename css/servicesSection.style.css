@@ -107,7 +107,7 @@
     line-height: 20px;
 }
 
-@media (min-width: 280px) and (min-height: 640px) {
+@media (min-width: 280px) and (min-height: 600px) {
     .services-section-content-wrapper {
         flex-direction: column;
     }
@@ -126,7 +126,7 @@
     }
 }
 
-@media (min-width: 320px) and (min-height: 640px) {
+@media (min-width: 320px) and (min-height: 600px) {
     .services-section-note-container {
         flex-direction: row;
     }
@@ -146,6 +146,57 @@
 
     .services-section-note-item p {
         font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+    .services-section-note-item {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 600px) {
+    .services-section-note-container {
+        justify-content: center;
+    }
+
+    .services-section-note-wrapper {
+        flex-direction: row;
+        margin-inline: 0;
+    }
+
+    .services-section-note-item {
+        height: 200px;
+        width: 200px;
+    }
+
+    .services-section-note-item div {
+        top: -20px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (min-width: 1280px) and (min-height: 640px) {
+    .services-section-text-box {
+        height: 20%;
+    }
+
+    .services-section-note-container {
+        align-items: start;
+        height: 80%;
+    }
+
+    .services-section-note-item {
+        height: 240px;
+        width: 240px;
+    }
+
+    .services-section-note-item div {
+        top: -25px;
+        height: 40px;
+        width: 40px;
     }
 }
 
