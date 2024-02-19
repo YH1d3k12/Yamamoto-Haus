@@ -57,7 +57,8 @@
     height: 100%;
     width: 50%;
 
-    overflow-x: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .services-section-note-wrapper {
@@ -122,8 +123,6 @@
     .services-section-note-container {
         height: 75%;
         width: 100%;
-
-        overflow-x: auto;
     }
 }
 
@@ -142,10 +141,11 @@
 
     .services-section-note-item h3 {
         margin: 10px 0px;
+        font-size: 1.05rem;
     }
 
     .services-section-note-item p {
-        line-height: 25px;
+        font-size: 0.85rem;
     }
 }
 

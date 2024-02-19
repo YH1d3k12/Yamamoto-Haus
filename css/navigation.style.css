@@ -147,8 +147,8 @@
     transform: translateY(-8px) rotate(-45deg);
 }
 
-@media (min-width: 360px) and (min-height: 768px),
-(min-width: 768px) and (min-height: 360px) {
+@media (min-width: 480px) and (min-height: 768px),
+(min-width: 768px) and (min-height: 480px) {
     .navigation-wrapper {
         padding: 10px;
     }

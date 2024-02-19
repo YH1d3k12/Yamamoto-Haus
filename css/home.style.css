@@ -70,12 +70,6 @@ span {
 
 @media (min-width: 360px) and (min-height: 768px),
 (min-width: 768px) and (min-height: 360px) {
-
-    .sections-container,
-    .sections {
-        height: calc(100vh - 120px);
-    }
-
     .h2 {
         font-size: 1.3rem;
         letter-spacing: 1px;
@@ -89,6 +83,15 @@ span {
     .p {
         font-size: 1rem;
         letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 480px) and (min-height: 768px),
+(min-width: 768px) and (min-height: 480px) {
+
+    .sections-container,
+    .sections {
+        height: calc(100vh - 120px);
     }
 }
 
