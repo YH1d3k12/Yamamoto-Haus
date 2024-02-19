@@ -1,14 +1,10 @@
 :root {
     --services-section-title-color: #62684d;
-    --services-section-note-seal-color: #9F4F39;
-    --services-section-note-background-color: #E6E1D7;
-    --services-section-note-shadow-color: #D1C9B9;
-    --services-section-note-color: #62684d;
 }
 
 .services-section-content-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     height: 100%;
     width: 100%;
@@ -26,21 +22,15 @@
     display: flex;
     flex-direction: column;
 
-    height: 100%;
-    width: 50%;
-    margin: max(20px, 3%) auto max(20px, 3%) 5%;
+    height: 25%;
+    width: min(100%, 880px);
 
     color: var(--services-section-title-color);
     text-align: justify;
 }
 
 .services-section-text-box h2 {
-    margin-bottom: min(2%, 20px);
     font-style: italic;
-}
-
-.services-section-text-box p {
-    line-height: 20px;
 }
 
 .services-section-text-box p span {
@@ -49,132 +39,23 @@
 }
 
 /*----------------- Notes ---------------------------*/
-
 .services-section-note-container {
-    display: flex;
-    flex-direction: column;
-
-    height: 100%;
-    width: 50%;
-
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-.services-section-note-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline: auto;
-}
-
-.services-section-note-item {
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
-    align-items: center;
     position: relative;
-
-    height: 150px;
-    width: 150px;
-    padding: 5px;
-    margin: 15px 10px;
-
-    color: var(--services-section-note-color);
-    background-color: var(--services-section-note-background-color);
-    box-shadow: 10px 10px 0px 0px var(--services-section-note-shadow-color);
-    text-align: center;
+    height: 75%;
+    width: 100%;
 }
 
-.services-section-note-item div {
-    position: absolute;
-    top: -15px;
-
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-
-    background-color: var(--services-section-note-seal-color);
-    opacity: 0.8;
-}
-
-.services-section-note-item h3 {
-    margin: 5px 0px;
-    font-style: italic;
-}
-
-.services-section-note-item p {
-    line-height: 20px;
-}
-
-@media (min-width: 280px) and (min-height: 600px) {
-    .services-section-content-wrapper {
-        flex-direction: column;
-    }
-
-    /*----------------- Text ---------------------------*/
+@media (min-width: 280px) and (min-height: 340px) {
     .services-section-text-box {
-        height: 25%;
-        width: min(90%, 880px);
-        margin-inline: auto;
+        margin: max(20px, 3%) 0px;
     }
 
-    /*----------------- Notes ---------------------------*/
-    .services-section-note-container {
-        height: 75%;
-        width: 100%;
-    }
-}
-
-@media (min-width: 320px) and (min-height: 600px) {
-    .services-section-note-container {
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 360px) and (min-height: 768px),
-(min-width: 768px) and (min-height: 360px) {
-    .services-section-note-item {
-        height: 170px;
-        width: 170px;
+    .services-section-text-box h2 {
+        margin-bottom: min(2%, 20px);
     }
 
-    .services-section-note-item h3 {
-        margin: 10px 0px;
-        font-size: 1.05rem;
-    }
-
-    .services-section-note-item p {
-        font-size: 0.85rem;
-    }
-}
-
-@media (min-width: 768px) and (min-height: 1024px) {
-    .services-section-note-item {
-        height: 200px;
-        width: 200px;
-    }
-}
-
-@media (min-width: 1024px) and (min-height: 600px) {
-    .services-section-note-container {
-        justify-content: center;
-    }
-
-    .services-section-note-wrapper {
-        flex-direction: row;
-        margin-inline: 0;
-    }
-
-    .services-section-note-item {
-        height: 200px;
-        width: 200px;
-    }
-
-    .services-section-note-item div {
-        top: -20px;
-        height: 30px;
-        width: 30px;
+    .services-section-text-box p {
+        line-height: 20px;
     }
 }
 
@@ -182,70 +63,4 @@
     .services-section-text-box {
         height: 20%;
     }
-
-    .services-section-note-container {
-        align-items: start;
-        height: 80%;
-    }
-
-    .services-section-note-item {
-        height: 240px;
-        width: 240px;
-    }
-
-    .services-section-note-item div {
-        top: -25px;
-        height: 40px;
-        width: 40px;
-    }
 }
-
-/* @media (min-width: 640px) {
-    .services-section-note-item {
-        height: 220px;
-        width: 220px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .services-section-text-box h2 {
-        margin-left: 8%;
-    }
-
-    .services-section-text-box p {
-        width: 75%;
-        margin-left: 8%;
-    }
-
-    .services-section-note-container {
-        width: 80%;
-    }
-
-    .services-section-note-item {
-        height: 260px;
-        width: 260px;
-    }
-}
-
-@media (min-width: 1536px) {
-    .services-section-text-box h2 {
-        margin-bottom: 20px;
-    }
-
-    .services-section-note-item {
-        height: 330px;
-        width: 330px;
-        padding: 20px;
-    }
-
-    .services-section-note-item div {
-        top: -15px;
-
-        height: 40px;
-        width: 40px;
-    }
-
-    .services-section-note-item p {
-        line-height: 40px;
-    }
-} */
