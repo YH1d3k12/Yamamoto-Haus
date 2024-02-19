@@ -8,7 +8,7 @@
 
 .services-section-content-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     height: 100%;
     width: 100%;
@@ -26,16 +26,21 @@
     display: flex;
     flex-direction: column;
 
-    height: 20%;
-    width: min(100%, 880px);
-    /* margin: max(20px, 3%) auto max(20px, 3%) 5%; */
+    height: 100%;
+    width: 50%;
+    margin: max(20px, 3%) auto max(20px, 3%) 5%;
 
     color: var(--services-section-title-color);
+    text-align: justify;
 }
 
 .services-section-text-box h2 {
     margin-bottom: min(2%, 20px);
     font-style: italic;
+}
+
+.services-section-text-box p {
+    line-height: 20px;
 }
 
 .services-section-text-box p span {
@@ -47,12 +52,19 @@
 
 .services-section-note-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 
-    height: 80%;
-    width: 100%;
+    height: 100%;
+    width: 50%;
 
     overflow-x: auto;
+}
+
+.services-section-note-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
 }
 
 .services-section-note-item {
@@ -62,10 +74,10 @@
     align-items: center;
     position: relative;
 
-    height: 110px;
-    width: 110px;
+    height: 150px;
+    width: 150px;
     padding: 5px;
-    margin: 20px 10px;
+    margin: 15px 10px;
 
     color: var(--services-section-note-color);
     background-color: var(--services-section-note-background-color);
@@ -86,12 +98,55 @@
 }
 
 .services-section-note-item h3 {
-    margin: 10px 0px;
+    margin: 5px 0px;
     font-style: italic;
 }
 
 .services-section-note-item p {
     line-height: 20px;
+}
+
+@media (min-width: 280px) and (min-height: 640px) {
+    .services-section-content-wrapper {
+        flex-direction: column;
+    }
+
+    /*----------------- Text ---------------------------*/
+    .services-section-text-box {
+        height: 25%;
+        width: min(90%, 880px);
+        margin-inline: auto;
+    }
+
+    /*----------------- Notes ---------------------------*/
+    .services-section-note-container {
+        height: 75%;
+        width: 100%;
+
+        overflow-x: auto;
+    }
+}
+
+@media (min-width: 320px) and (min-height: 640px) {
+    .services-section-note-container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 360px) and (min-height: 768px),
+(min-width: 768px) and (min-height: 360px) {
+    .services-section-note-item {
+        height: 170px;
+        width: 170px;
+    }
+
+    .services-section-note-item h3 {
+        margin: 10px 0px;
+    }
+
+    .services-section-note-item p {
+        line-height: 25px;
+    }
 }
 
 /* @media (min-width: 640px) {

@@ -53,22 +53,23 @@ span {
     font-weight: 600;
 }
 
-@media(min-width: 480px) and (min-height: 320px) {
+@media(min-width: 320px) and (min-height: 640px),
+(min-width: 640px) and (min-height: 320px) {
     .h2 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
     .h3 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
 
-/* Responsive design for screens equal or larger than 640px */
-@media (min-width: 640px) and (min-height: 480px) {
+@media (min-width: 360px) and (min-height: 768px),
+(min-width: 768px) and (min-height: 360px) {
 
     .sections-container,
     .sections {
@@ -91,8 +92,8 @@ span {
     }
 }
 
-/* Responsive design for screens equal or larger than 768px */
-@media (min-width: 768px) and (min-height: 640px) {
+@media (min-width: 768px) and (min-height: 640px),
+(min-width: 640px) and (min-height: 768px) {
 
     .sections-container,
     .sections {
@@ -115,8 +116,8 @@ span {
     }
 }
 
-/* Responsive design for screens equal or larger than 1024px */
-@media (min-width: 1024px) and (min-height: 768px) {
+@media (min-width: 1024px) and (min-height: 768px),
+(min-width: 768px) and (min-height: 1024px) {
 
     .sections-container,
     .sections {
@@ -136,7 +137,8 @@ span {
     }
 }
 
-@media (min-width: 1280px) and (min-height: 768px) {
+@media (min-width: 1280px) and (min-height: 768px),
+(min-width: 768px) and (min-height: 1280px) {
     .h2 {
         font-size: 1.6rem;
     }
@@ -150,8 +152,8 @@ span {
     }
 }
 
-/* Responsive design for screens equal or larger than 1536px */
-@media (min-width: 1536px) and (min-height: 1024px) {
+@media (min-width: 1536px) and (min-height: 1024px),
+(min-width: 1024px) and (min-height: 1536px) {
 
     .sections-container,
     .sections {
