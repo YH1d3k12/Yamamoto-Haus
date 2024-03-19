@@ -1,0 +1,59 @@
+.contact-section-content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    padding: 5px max(10px, 2%);
+
+    background-image: url(/images/background_granulado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    overflow: hidden;
+}
+
+.contact-section-bamboo {
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+
+    height: 100%;
+    aspect-ratio: 4/5;
+    z-index: 1;
+}
+
+.contact-red-ball {
+    position: absolute;
+    bottom: 12%;
+    right: -170px;
+
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+
+    background-color: #ae172e;
+}
+
+.contact-section-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    height: 100%;
+
+    margin: max(30px, 4%);
+}
+
+.contact-section-details h2 {
+    letter-spacing: 4px;
+    line-height: 50px;
+}
+
+.contact-section-details p {
+    line-height: 28px;
+}
