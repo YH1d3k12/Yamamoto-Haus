@@ -55,9 +55,6 @@
 
     height: 75%;
     width: min(1080px, 100%);
-
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .services-section-note-wrapper {
