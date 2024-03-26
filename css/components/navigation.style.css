@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 60px;
+    height: auto;
     margin: 0px 10px;
 
     color: var(--navigation-brand-name-color);
@@ -78,8 +78,8 @@
     position: absolute;
     top: -1000px;
 
-    height: 50vh;
-    width: 80vw;
+    height: 240px;
+    width: min(80%, 300px);
     border-radius: 8px;
 
     background-image: url(/images/background_granulado.png);
@@ -94,7 +94,6 @@
 }
 
 .navbar-menu-link {
-    width: 90%;
     padding: 12px;
     border-radius: 25px;
 
@@ -119,9 +118,9 @@
     z-index: 99;
     transition: all 0.5s ease;
 
-    -webkit-box-shadow: 0px 0px 0px 200vw rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 0px 200vw rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 0px 200vw rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 0px 200vw rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 0px 200vw rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 0px 200vw rgba(0, 0, 0, 0.3);
 }
 
 #mobile-navbar .bar {
@@ -148,26 +147,25 @@
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Responsive design for screens equal or larger than 640px */
-@media (min-width: 640px) {
+@media (min-width: 480px) and (min-height: 768px),
+(min-width: 768px) and (min-height: 480px) {
     .navigation-wrapper {
         padding: 10px;
     }
-    
+
     .brand-logo {
         width: 100px;
     }
-    
+
     .brand-name-wrapper {
-        height: 100px;
         margin: 0px 20px;
     }
-    
+
     .brand-title {
         margin-top: 10px;
         font-size: 1.6rem;
     }
-    
+
     .brand-subtitle {
         font-size: 0.75rem;
         letter-spacing: 6.5px;
@@ -175,25 +173,25 @@
 }
 
 /* Responsive design for screens equal or larger than 768px */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (min-height: 640px),
+(min-width: 640px) and (min-height: 768px) {
     .navigation-wrapper {
         padding: 5px;
     }
-    
+
     .brand-logo {
         width: 80px;
     }
-    
+
     .brand-name-wrapper {
-        height: 80px;
         margin: 0px 10px;
     }
-    
+
     .brand-title {
         margin-top: 5px;
         font-size: 1.1rem;
     }
-    
+
     .brand-subtitle {
         font-size: 0.6rem;
         letter-spacing: 4px;
@@ -204,11 +202,11 @@
         grid-template-columns: none;
         position: static;
         top: none;
-    
+
         height: auto;
         width: auto;
         border-radius: none;
-    
+
         background-image: none;
         box-shadow: none;
     }
@@ -216,7 +214,7 @@
     .navbar-menu-item {
         margin: 0px 6px;
     }
-      
+
     .navbar-menu-link {
         width: auto;
         padding: 12px;
@@ -230,26 +228,25 @@
     }
 }
 
-/* Responsive design for screens equal or larger than 1024px */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 768px),
+(min-width: 768px) and (min-height: 1024px) {
     .navigation-wrapper {
         padding: 15px;
     }
-    
+
     .brand-logo {
         width: 120px;
     }
-    
+
     .brand-name-wrapper {
-        height: 120px;
         margin: 0px 30px;
     }
-    
+
     .brand-title {
         margin-top: 10px;
         font-size: 1.85rem;
     }
-    
+
     .brand-subtitle {
         font-size: 0.9rem;
         letter-spacing: 6.5px;
@@ -258,33 +255,32 @@
     .navbar-menu-item {
         margin: 0px 8px;
     }
-      
+
     .navbar-menu-link {
         padding: 12px;
         font-size: 1.1rem;
     }
 }
 
-/* Responsive design for screens equal or larger than 1536px */
-@media (min-width: 1536px) {
+@media (min-width: 1536px) and (min-height: 1024px),
+(min-width: 1024px) and (min-height: 1536px) {
     .navigation-wrapper {
         padding: 20px;
     }
-    
+
     .brand-logo {
         width: 140px;
     }
-    
+
     .brand-name-wrapper {
-        height: 140px;
         margin: 0px 40px;
     }
-    
+
     .brand-title {
         margin-top: 15px;
         font-size: 2.2rem;
     }
-    
+
     .brand-subtitle {
         font-size: 1.1rem;
         letter-spacing: 7.5px;
@@ -294,11 +290,11 @@
         background-color: var(--navigation-navbar-item-hover-bg-color);
         color: var(--navigation-navbar-item-hover-color);
     }
-    
+
     .navbar-menu-item {
         margin: 0px 12px;
     }
-      
+
     .navbar-menu-link {
         padding: 12px;
         font-size: 1.3rem;
