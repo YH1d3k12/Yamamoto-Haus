@@ -4,4 +4,4 @@ Link: http://yamamotohaus.com/
 
 ## 🛠 Em Construção 🛠: 
 
-O website da Yamamoto Haus ainda está em contrução!
+O website da Yamamoto Haus ainda está em construção!
